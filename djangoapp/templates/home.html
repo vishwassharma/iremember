@@ -1,4 +1,11 @@
 {% extends 'base.html' %}
+
+{% load staticfiles %}
+
+{% block css %}
+	<link rel="stylesheet" href="{% static "style/main.css" %}">	
+{% endblock css %}
+
 {% block title %}It works!{% endblock %}
 
 {% block content %}
