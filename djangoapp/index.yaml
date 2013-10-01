@@ -32,3 +32,9 @@ indexes:
   - name: username
   - name: __key__
     direction: desc
+
+- kind: django_redirect
+  properties:
+  - name: old_path
+  - name: __key__
+    direction: desc
