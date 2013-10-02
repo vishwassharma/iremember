@@ -1,4 +1,60 @@
 // $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 @import sass-bootstrap/lib/bootstrap
+@import compass
 
+$image-bg: "bg.jpg"
+$nibhaya_case: "nibhaya_case.jpg"
+$case: $nibhaya_case
+
+$green: #04938b
+$white: white
+.blueborder
+	background: image-url($image-bg)
+
+#content
+	position: absolute
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	overflow-x: hidden
+
+#header
+	position: absolute
+	left: 0px
+	right: 0px
+	top: 0px
+	min-width: 100%
+	z-index: 2
+
+
+.rel
+	position: relative
+
+.logo
+	position: absolute
+	top: 40px
+	background: $green
+	padding: 24px 80px
+	color: $white
+
+	h1
+		margin: 0px
+		&:before
+			content: "\""
+		&:after
+			content: "\""
+
+.menu
+	position: absolute
+	top: 40px
+	left: 400px
+
+.mentions
+	position: absolute
+	right: 100px
+	top: 40px
+
+#main-content
+	background: image-url($case) no-repeat
